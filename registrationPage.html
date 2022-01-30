@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Register Your Event</title>
+    <link href="registrationPage.css" rel="stylesheet" type="text/css" />
+  
+</head>
+
+<body>
+  <h1 id="title">Track Tryout Survey Form</h1>
+
+<p id="description"><i>If you are interested in track, fill out this form!</i></p>
+
+  <form id="survey-form">
+    
+    <div class="form-control">
+      <label for="name" id="name-label"> Name:</label>
+      <input id="name" type="text" name="name" placeholder="Enter Name" required></input>
+      <br>
+    </div>
+
+    <div class="form-control">
+      <label for="email" id="email-label"> Email:</label>
+      <input id="email" type="email" name="email" placeholder="Enter Email" required></input>
+      <br>
+    </div>
+
+    <div class="form-control">
+      <label for="number" id="number-label"> Age:</label>
+      <input id="number" type="number" name="number" placeholder="Enter Age" min="13" max="18" required></input>
+      <br>
+    </div>
+
+   <div class="form-control">
+    <label for="dropdown" id="grade">Grade:</label>
+    <select id="dropdown">
+      <option value="9">9</option>
+      <option value="10">10</option>
+      <option value="11">11</option>
+      <option value="12">12</option>
+    </select>
+  </div>
+
+  <div class="form-control">
+    <label for="runtype" id="runtype">Runtype:</label>
+    
+      
+      <label for="runtype"><input type="radio" id="sprinting" name="runform" value="sprinting">Sprinting</label>
+      <label for="runtype"><input type="radio" id="mid-distance" name="runform" value="mid-distance">Mid-Distance</label>
+      <label for="runtype"><input type="radio" id="long-distance" name="runform" value="long-distance">Long-Distance</label>
+    </div>
+    
+    <div class= "form-control">
+      <label for="events">Select Events: </label>
+    
+      <label for="checkbox-100"><input id="checkbox-100" type="checkbox" name="events" value="100m">100m</label>
+      <label for="checkbox-200"><input id="checkbox-200" type="checkbox" name="events" value="200m">200m</label>
+      <label for="checkbox-300"><input id="checkbox-300" type="checkbox" name="events" value="400m">400m</label>
+      <label for="checkbox-800"><input id="checkbox-800" type="checkbox" name="events" value="800m">800m</label>
+      <label for="checkbox-1600"><input id="checkbox-1600" type="checkbox" name="events" value="1600m">1600m</label> 
+      <label for="checkbox-3200"><input id="checkbox-3200" type="checkbox" name="events" value="3200m">3200m</label>
+     </div>
+    
+     <div class="form-control">
+      <label for="textarea">Past Injuries: </label>
+      <textarea id="textarea" placeholder="Enter any information about past injuries here..." name="injuries" rows"15" cols="15"></textarea>
+     </div>
+
+    <button id="submit" type="submit">Submit</button>
+
+    
+  </form>
+  
+  </body>
+  
+</html>
+    
